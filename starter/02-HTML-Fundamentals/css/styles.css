@@ -93,6 +93,13 @@ footer {
   background-color: hsl(0, 0%, 87%);
   padding: 20px 40px;
   margin-bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.nav-link {
+  margin-left: 1em;
 }
 
 aside {
@@ -200,33 +207,54 @@ ol {
   right: 0;
   top: 0;
 }
+.author-container {
+  display: flex;
+  margin-bottom: 20px;
+}
 
 .profile-img {
   width: 50px;
   height: 50px;
-  float: left;
-  margin-bottom: 20px;
+  /* float: left; */
+  margin-right: 20px;
 }
 
 .author {
-  float: left;
-  margin-top: 10px;
-  margin-left: 20px;
+  /* float: left; */
+  /* margin-top: 10px; */
+  /* margin-left: 20px; */
+  align-self: flex-end;
+  margin: 0;
 }
 
-h1 {
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+article {
+  flex-basis: 70%;
+}
+
+aside {
+  flex-basis: 25%;
+}
+
+/* h1 {
   float: left;
 }
 
 nav {
   float: right;
-}
+} 
 
 .main-header::after {
   content: "";
   display: table;
   clear: both;
 }
+
 
 article {
   float: left;
@@ -246,3 +274,4 @@ footer {
   display: block;
   clear: both;
 }
+*/
