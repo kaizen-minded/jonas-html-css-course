@@ -1,8 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   font-family: sans-serif;
   color: #444;
   padding: 0;
   margin: 0;
+  border-top: 10px solid #1098ad;
 }
 
 h1,
@@ -15,14 +21,27 @@ h1 {
   font-size: 26px;
   text-transform: uppercase;
   margin-top: 0;
+  font-style: italic;
+}
+
+h1::first-letter {
+  font-style: normal;
+  font-size: 28px;
 }
 
 h2 {
   font-size: 40px;
+  margin-bottom: 30px;
+  position: relative;
 }
 
 h3 {
   font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+h3 + p::first-line {
+  color: red;
 }
 
 h4 {
@@ -38,6 +57,11 @@ p {
 
 li {
   font-size: 20px;
+  margin-bottom: 10px;
+}
+
+li:last-child {
+  margin-bottom: 0;
 }
 
 footer {
@@ -61,18 +85,26 @@ footer {
 .related-posts {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .main-header {
   background-color: #f7f7f7;
+  background-color: hsl(0, 0%, 87%);
+  padding: 20px 40px;
+  margin-bottom: 60px;
 }
 
 aside {
   background-color: #f7f7f7;
   border: 5px solid #1098ad;
   border-width: 5px 0;
+  padding: 50px 40px;
+  max-width: 500px;
 }
-
+article {
+  margin-bottom: 60px;
+}
 article li:first-child {
   font-weight: bold;
 }
@@ -117,4 +149,100 @@ a:active {
 
 footer p {
   color: green;
+}
+
+.post-header {
+  margin-bottom: 40px;
+}
+
+p {
+  font-size: 22px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+.post-img {
+  width: 100%;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+}
+
+.like-btn {
+  font-size: 1.2rem;
+  padding: 0.5em 1em;
+  text-align: center;
+  position: absolute;
+  right: 1em;
+  bottom: 0;
+  cursor: pointer;
+}
+
+.post-header h2:after {
+  content: "TOP";
+  font-size: 16px;
+  font-weight: bold;
+  position: absolute;
+  color: black;
+  background-color: #ffe70e;
+  display: inline-block;
+  padding: 0.5em 0.5em;
+  right: 0;
+  top: 0;
+}
+
+.profile-img {
+  width: 50px;
+  height: 50px;
+  float: left;
+  margin-bottom: 20px;
+}
+
+.author {
+  float: left;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+h1 {
+  float: left;
+}
+
+nav {
+  float: right;
+}
+
+.main-header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+article {
+  float: left;
+  width: 70%;
+}
+
+aside {
+  float: right;
+  width: 25%;
+}
+
+footer {
+  clear: both;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
 }
