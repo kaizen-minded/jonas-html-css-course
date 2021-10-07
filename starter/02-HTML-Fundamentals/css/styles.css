@@ -230,14 +230,33 @@ aside {
 .posts-container {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 30px;
+  gap: 1em;
 }
 
 .posts-container img {
-  margin-right: 1em;
+  /* margin-right: 1em; */
   width: 70px;
   height: 70px;
 }
 
+.related-link:link {
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  margin-bottom: 0;
+  display: block;
+}
+
+.related-author {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: italic;
+}
+strong {
+  font-weight: inherit;
+}
 /* h1 {
   float: left;
 }
