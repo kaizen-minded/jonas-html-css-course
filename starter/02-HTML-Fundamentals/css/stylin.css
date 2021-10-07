@@ -25,20 +25,14 @@ body {
 
 .price {
   font-size: 1.35rem;
-  float: left;
 }
 
 .shipping {
-  float: right;
   font-size: 0.9rem;
   color: #949494;
   font-weight: bold;
   margin-top: 5px;
   margin-bottom: 20px;
-}
-
-.description {
-  clear: both;
 }
 
 .btn-cart {
@@ -66,13 +60,13 @@ body {
 }
 
 .item-img {
-  width: 25%;
-  float: left;
+  width: 250px;
+  height: 250px;
 }
 
 ul {
   list-style: square;
-  margin: 20px;
+  margin: 15px;
 }
 
 li {
@@ -96,14 +90,14 @@ li {
 .color-picker {
   list-style: none;
   margin: 13px 0 0;
+  display: flex;
+  gap: 20px;
 }
 
 .box {
-  display: inline-block;
   background-color: black;
   height: 25px;
   width: 25px;
-  margin-right: 20px;
 }
 
 .color2 {
@@ -126,8 +120,16 @@ li {
 }
 
 section {
-  float: left;
-  width: 33%;
-  margin-left: 40px;
-  padding-top: 1em;
+  padding-top: 0.5em;
+  flex: 1;
+}
+
+.row {
+  display: flex;
+  gap: 40px;
+}
+
+.product-price-info {
+  display: flex;
+  gap: 30px;
 }
