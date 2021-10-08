@@ -65,6 +65,7 @@ li:last-child {
 }
 
 footer {
+  grid-column: 1 / 10;
   font-size: 18px;
 }
 
@@ -93,10 +94,10 @@ footer {
   background-color: #f7f7f7;
   background-color: hsl(0, 0%, 87%);
   padding: 20px 40px;
-  margin-bottom: 60px;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  grid-column: 1 / -1;
 }
 
 .nav-link {
@@ -172,6 +173,9 @@ ol {
   max-width: 1200px;
   margin: auto;
   position: relative;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 40px;
 }
 
 .like-btn {
@@ -198,8 +202,8 @@ ol {
 }
 
 .author-container {
-  display: flex;
-  margin-bottom: 20px;
+  /* display: flex; */
+  /* margin-bottom: 20px; */
 }
 
 .profile-img {
@@ -209,29 +213,37 @@ ol {
 }
 
 .author {
-  align-self: flex-end;
+  /* align-self: flex-end; */
   margin: 0;
 }
 
-.flex-container {
+/* .flex-container {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-}
+} */
 
 article {
-  flex-basis: 70%;
+  /* flex-basis: 70%; */
 }
 
 aside {
-  flex-basis: 25%;
+  /* flex-basis: 25%; */
 }
 
+.main-article {
+  grid-column: 1 / 11;
+}
+
+.aside-posts {
+  grid-column: 12;
+  align-self: start;
+}
 .posts-container {
-  display: flex;
+  /* display: flex;
   justify-content: space-between;
+  gap: 1em; */
   margin-bottom: 30px;
-  gap: 1em;
 }
 
 .posts-container img {
