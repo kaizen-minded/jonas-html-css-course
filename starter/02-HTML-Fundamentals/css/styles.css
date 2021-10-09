@@ -65,7 +65,7 @@ li:last-child {
 }
 
 footer {
-  grid-column: 1 / 10;
+  grid-column: 1;
   font-size: 18px;
 }
 
@@ -174,7 +174,7 @@ ol {
   margin: auto;
   position: relative;
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: 1fr 20%;
   gap: 40px;
 }
 
@@ -202,8 +202,8 @@ ol {
 }
 
 .author-container {
-  /* display: flex; */
-  /* margin-bottom: 20px; */
+  display: flex;
+  margin-bottom: 20px;
 }
 
 .profile-img {
@@ -213,7 +213,7 @@ ol {
 }
 
 .author {
-  /* align-self: flex-end; */
+  align-self: flex-end;
   margin: 0;
 }
 
@@ -231,12 +231,12 @@ aside {
   /* flex-basis: 25%; */
 }
 
-.main-article {
+/* .main-article {
   grid-column: 1 / 11;
-}
+} */
 
 .aside-posts {
-  grid-column: 12;
+  /* grid-column: 12; */
   align-self: start;
 }
 .posts-container {
@@ -247,7 +247,6 @@ aside {
 }
 
 .posts-container img {
-  /* margin-right: 1em; */
   width: 70px;
   height: 70px;
 }
