@@ -13,6 +13,9 @@ body {
   margin: 0 auto;
   margin-top: 30px;
   position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: baseline;
 }
 
 .header {
@@ -21,6 +24,7 @@ body {
   text-transform: uppercase;
   background-color: #e7e7e7;
   padding: 1.5em;
+  grid-column: 1 / -1;
 }
 
 .price {
@@ -31,11 +35,10 @@ body {
   font-size: 0.9rem;
   color: #949494;
   font-weight: bold;
-  margin-top: 5px;
-  margin-bottom: 20px;
 }
 
 .btn-cart {
+  grid-column: 1 / -1;
   background-color: black;
   color: white;
   text-transform: uppercase;
@@ -120,16 +123,17 @@ li {
 }
 
 section {
-  padding-top: 0.5em;
+  padding-top: 1em;
   flex: 1;
 }
 
-.row {
+/* .row {
   display: flex;
   gap: 40px;
-}
+} */
 
 .product-price-info {
   display: flex;
   gap: 30px;
+  align-items: center;
 }
