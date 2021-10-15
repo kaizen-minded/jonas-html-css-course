@@ -17,6 +17,8 @@ FONT SIZE SYSTEM (px)
 /* ------------------------ */
 body {
   font-family: sans-serif;
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
 }
 
 .container {
@@ -37,6 +39,41 @@ h2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 80px;
+}
+
+/* Typography */
+/* ------------------------ */
+
+h1,
+h2 {
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: 2.75rem;
+  letter-spacing: -1px;
+}
+
+h2 {
+  font-size: 2.25rem;
+  letter-spacing: -0.5px;
+}
+h3 {
+  font-size: 1.25rem;
+}
+
+footer {
+  font-size: 0.875rem;
+}
+
+.header-text {
+  font-size: 1.125rem;
+}
+
+.features-text,
+.testimonial-text,
+.chair-price {
+  font-size: 1.125rem;
 }
 
 /* ------------------------ */
